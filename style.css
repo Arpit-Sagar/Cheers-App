@@ -1,0 +1,229 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  h1 {
+       font-family: "Lucida handwriting",cursive;
+       background:darkmagenta; 
+       border:dimgray; 
+       opacity: .8; 
+       border: 1px solid dimgray;
+      display: inline-block;
+       padding: 5px 10px;
+  }
+  .header {
+    padding: 60px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .neon h3 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.25em;
+    animation: neon 1s ease infinite;
+    font-style:italic;
+    bottom: 20%;
+	  
+  } 
+   @keyframes neon {
+      0%,
+      100% {
+          text-shadow: 0 0 10px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+          color: #f5efcb;
+      }
+      50% {
+          text-shadow: 0 0 2px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+          color: #eda0d3;
+      }
+  }
+  
+  body {
+    background-image: url(/images/drinks.jpg);
+    background-size: 100% 100%;
+    background-repeat:round;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    left: 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 38.5em;
+    max-height:max-content;
+    background-color:azure;
+    color: #fff;
+    opacity: .9;
+    padding: 0.6em;
+    border-radius: 0.6em;
+    box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
+    transform: translate(-50%, 0);
+    overflow: auto;
+  }
+  .search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    margin-bottom: 1.2em;
+  }
+  .search-container input {
+    font-size: 1em;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    color: #000;
+    border-bottom: 1.5px solid #1f194c;
+  }
+  .search-container input:focus {
+    border-color: #5372f0;
+  }
+  .search-container button {
+    font-size: 1em;
+    border-radius: 2em;
+    background-color: #5372f0;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #result {
+    color: #000;
+    line-height: 2em;
+  }
+  #result img {
+    display: block;
+    max-width: 12.5em;
+    margin: auto;
+    opacity:1;
+  }
+  #result h2 {
+    font-size: 1.25em;
+    margin: 0.8em 0 1.6em 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: #1f194c;
+    position: relative;
+  }
+  #result h2:before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    background-color: #5372f0;
+    left: 42.5%;
+    bottom: -0.3em;
+  }
+  #result h3 {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-bottom: 0.2em;
+    color: #1f194c;
+  }
+  #result ul {
+    margin-bottom: 1em;
+    margin-left: 1.8em;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #result li {
+    margin-bottom: 0.3em;
+  }
+  #result p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 0.95em;
+  }
+  .msg {
+    text-align: center;
+  }
+  /* Responsive Styles */
+
+/* For screens smaller than 768px (e.g., smartphones) */
+@media screen and (max-width: 767px) {
+  .container {
+      width: 90%;
+      max-width: 90%;
+  }
+  .search-container {
+      flex-wrap:wrap;
+  }
+  .search-container input {
+      width:auto; /* Allow the input to take the full width */
+      margin-bottom: 10px;
+  }
+
+  .search-container button {
+     width: auto;
+  }
+  
+
+  .neon h3 {
+      font-size: 1.5rem;
+  }
+}
+
+/* For screens between 768px and 1023px (e.g., tablets) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+      width: 80%;
+      max-width: 80%;
+  }
+
+  .headermeal {
+      font-size: 2.5rem;
+  }
+
+  .neon h3 {
+      font-size: 1.75rem;
+  }
+  .search-container {
+    flex-wrap:wrap;
+}
+.search-container input {
+   width:auto;
+    margin-bottom: 10px;
+}
+
+.search-container button {
+  width: auto;
+}
+}
+  @media screen and (max-width: 600px) {
+    .container {
+      font-size: 20px;
+      max-width: 90%;
+    }
+    .h1 {
+      font-size: 20px;
+      max-width: 100%;
+    }
+    .neon h3 {
+      font-size: 20px;
+      max-width: 100%;
+    }
+    .search-container {
+      flex-wrap:wrap;
+  }
+  .search-container input {
+    width: auto; /* Allow the input to take the full width */
+      margin-bottom: 10px;
+  }
+
+  .search-container button {
+    width: auto;/* Allow the button to take the full width */
+  }
+  }

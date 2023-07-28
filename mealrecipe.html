@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheers!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylemeal.css" />
+  </head>
+  
+  <body>
+    
+    <div class="headermeal"><h1>Your   Meal!</h1></div>
+    <div class="neon"><h3>Browse by Name !! With Cheers :)</h3></div>
+    <div class="container">
+        <header>
+           <input type="text" placeholder="Find a recipe" id="search-term"
+           value="cake">
+           <button id="search"><i class="fas fa-search"></i></button>
+        </header>
+        <div class="fav-container">
+           <h3>What's Favourite?</h3>
+           <ul class="fav-meals" id="fav-meals"></ul>
+        </div>
+        <div class="meals" id="meals"></div>
+     </div>
+     <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+           <button id="close-popup" class="close-popup">
+           <i class="fas fa-times"></i>
+           </button>
+           <div class="meal-info" id="meal-info"></div>
+        </div>
+     </div>
+    <!-- <div class="container">
+       
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search your Meal..."
+          id="user-inp"
+          value="cake"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="fav-container">
+        <h3>What's Favourite?</h3>
+        <ul class="fav-meals" id="fav-meals"></ul>
+        
+     </div>
+     <div class="meals" id="meals"></div>
+     
+     <div class="popup-container hidden" id="meal-popup">
+        <div class="popup">
+           <button id="close-popup" class="close-popup">
+           <i class="fas fa-times"></i>
+           </button>
+           <div class="meal-info" id="meal-info"></div>
+        </div>
+     </div>
+      <div id="result"></div>
+    </div> -->
+
+
+    <!-- Script -->
+    
+    <script src="scriptmeal.js"></script>
+    
+  </body>
+</html>
